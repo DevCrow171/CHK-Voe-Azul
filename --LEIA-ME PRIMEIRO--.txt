@@ -1,0 +1,245 @@
+Manual de Instruções para o Checker Milhas Azul v3.0
+
+
+---
+
+Descrição do Programa
+
+O Checker Milhas Azul v3.0 é um script desenvolvido por mim para verificar as milhas Azul de sua DB, otimizado e funcional no seu celular 100%.
+
+
+---
+
+Pré-requisitos
+
+1. Sistema Operacional Compatível:
+
+Windows
+
+Linux
+
+Android (via Termux)
+
+
+
+2. Dependências:
+
+Python 3.8 ou superior
+
+Pacotes Python necessários:
+
+requests
+
+colorama
+
+keyboard
+
+concurrent.futures
+
+
+
+
+3. Instalação de Dependências: Execute o seguinte comando no terminal para instalar as dependências necessárias:
+
+pip install requests colorama keyboard
+
+
+
+
+---
+
+Como Utilizar
+
+1. Inicialização
+
+Execute o script usando o terminal:
+
+python checker_milhas.py
+
+
+2. Menu Principal
+
+Após a execução, o menu principal será exibido com as seguintes opções:
+
+1. Iniciar o Checker: Para carregar um arquivo de credenciais e verificar as milhas.
+
+
+2. Créditos e Informações: Mostra informações sobre a versão e desenvolvedor.
+
+
+3. Sair: Finaliza o programa.
+
+
+
+
+---
+
+3. Verificando Credenciais
+
+Opção 1: Carregar uma DB (Arquivo)
+
+1. Prepare um arquivo de texto no formato:
+
+CPF:SENHA
+12345678900:senha123
+
+
+2. Escolha a opção de checagem automática.
+
+
+3. Arraste ou cole o caminho do arquivo na tela solicitada.
+
+
+
+Opção 2: Inserção Manual
+
+1. Escolha a opção Inserir CPF e SENHA manualmente.
+
+
+2. Insira as credenciais no formato solicitado CPF:SENHA.
+
+
+
+Teclas de Controle:
+
+p: Pausa o processo.
+
+s: Interrompe o checker a qualquer momento.
+
+
+
+---
+
+4. Funcionamento Interno
+
+O script faz uma requisição à API da Azul para autenticar e obter milhas.
+
+Resultados:
+
+Login bem-sucedido: Mostra o email e o saldo de milhas.
+
+Login falhou: Mensagem de erro indicando credenciais incorretas.
+
+
+Resultados Salvos:
+
+Resultados gerais: resultados_consultas.txt
+
+Contas VIP (mais de 5000 milhas): contas_vip.txt
+
+
+
+
+---
+
+Para que o programa funcione corretamente, você precisará instalar algumas dependências em seu ambiente Python. Siga os passos abaixo:
+
+1. Verifique se o Python está instalado
+
+Abra o terminal ou prompt de comando e execute:
+
+python --version
+
+ou
+
+python3 --version
+
+Se não estiver instalado, baixe e instale o Python aqui.
+
+=============================================
+
+2. Crie um ambiente virtual (opcional, mas recomendado)
+
+No terminal, execute os comandos:
+
+python -m venv venv
+
+OU
+
+python3 -m venv venv
+
+Para ativar o ambiente virtual:
+
+Windows:
+
+venv\Scripts\activate
+
+Linux/Mac:
+
+source venv/bin/activate
+
+=============================================
+
+3. Instale as dependências
+
+As dependências necessárias são:
+
+requests
+
+keyboard
+
+colorama
+
+concurrent.futures (já faz parte da biblioteca padrão no Python 3.2+)
+
+
+Execute o seguinte comando para instalá-las:
+
+pip install requests keyboard colorama
+
+=============================================
+
+4. Crie um arquivo requirements.txt (opcional)
+
+Caso queira compartilhar ou usar um ambiente específico com as mesmas dependências:
+
+Crie um arquivo de texto chamado requirements.txt com o seguinte conteúdo:
+
+requests
+keyboard
+colorama
+
+Salve o arquivo e Instale as dependências listadas:
+
+pip install -r requirements.txt
+
+
+5. Verifique se as dependências estão instaladas
+
+Execute no terminal:
+
+pip list
+
+Certifique-se de que os pacotes requests, keyboard e colorama aparecem na lista.
+
+
+6. Execute o programa
+
+Após instalar as dependências, você pode executar o script diretamente:
+
+python azul.py
+
+
+Se encontrar algum erro durante a instalação, me avise para que possamos solucionar juntos!
+
+
+
+---
+
+Créditos
+
+Desenvolvedor: CROW 171
+
+Versão: 3.0
+
+Build: 20241110
+
+Descrição: Ferramenta para automatizar o processo de checagem de milhas da Azul.
+
+
+
+
+---
+
+Esse manual cobre tudo que você precisa saber para operar o script com eficiência.
+
